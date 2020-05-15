@@ -2,7 +2,7 @@ module.exports = {
     themeConfig: {
         smoothScroll: true,
         logo: '/icon.png',
-        lastUpdated: 'بهار۹۹',
+        lastUpdated: 'آخرین ویرایش',
         nextLinks: true,
         // default value is true. Set it to false to hide prev page links on all pages
         prevLinks: true,
@@ -10,7 +10,7 @@ module.exports = {
         repoLabel: 'ریپوی ما!',
         editLinks: true,
         // custom text for edit link. Defaults to "Edit this page"
-        editLinkText: 'Help us improve this page!',
+        editLinkText: 'اگر این صفحه نیاز به اصلاح دارد لطفا یک پول ریکوئست بدهید',
         searchPlaceholder: 'جست و جو...',
         nav: [
             {text: 'صفحه نخست', link: '/'},
@@ -34,6 +34,9 @@ module.exports = {
     sidebarDepth: 4,
     displayAllHeaders: true,
     sidebar: [
+        '/',
+        '/intro',
+        '/concepts',
         {
             title: 'مقدمه و شروع',   // required
             path: '/guide',      // optional, link of the title, which should be an absolute path and must exist
