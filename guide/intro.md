@@ -1,6 +1,5 @@
 ---
-title: شروع کار با ناکس
-sidebar: auto
+title: شروع کار با ناکس 
 prev: false
 next: ./concepts
 ---

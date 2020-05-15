@@ -1,12 +1,12 @@
 <template>
   <div class="theme-container">
     <div class="theme-default-content">
-      <h1>404</h1>
+      <h1>۴۰۴</h1>
 
       <blockquote>{{ getMsg() }}</blockquote>
 
       <RouterLink to="/">
-        Take me home.
+        برگردیم صفحه اول
       </RouterLink>
     </div>
   </div>
@@ -14,10 +14,10 @@
 
 <script>
 const msgs = [
-  `There's nothing here.`,
-  `How did we get here?`,
-  `That's a Four-Oh-Four.`,
-  `Looks like we've got some broken links.`
+  `اینجا چیزی نیست متاسفانه.`,
+  `اینجا چیکار میکنیم؟`,
+  `اینجا اتاق ۴۰۴ هسش که خالیه`,
+  `ای بابا! انگار یه لینک خراب بوده`
 ]
 
 export default {

@@ -33,25 +33,16 @@ module.exports = {
     },
     sidebarDepth: 4,
     displayAllHeaders: true,
-    sidebar: [
-        '/',
-        '/intro',
-        '/concepts',
-        {
-            title: 'مقدمه و شروع',   // required
-            path: '/guide',      // optional, link of the title, which should be an absolute path and must exist
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 4,    // optional, defaults to 1
-
-        },
-        {
-            title: 'مفاهیم کلی',   // required
-            path: '/guide',      // optional, link of the title, which should be an absolute path and must exist
-            collapsable: true, // optional, defaults to true
-            sidebarDepth: 4,    // optional, defaults to 1
-            children: [
-                '/'
-            ]
-        },
-    ],
+    sidebar: {
+        '/': [
+            '',        /* / */
+            'contact', /* /contact.html */
+            'about'    /* /about.html */
+        ],
+        '/guid': [
+            '',        /* / */
+            'intro', /* /contact.html */
+            'concepts'    /* /about.html */
+        ]
+    }
 }
