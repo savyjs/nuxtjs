@@ -1,5 +1,5 @@
 ---
-title: مفاهیم کلی ناکس 
+title: مفاهیم پایه 
 prev: ./intro
-next: ./concepts
+next: ./advanced
 ---
