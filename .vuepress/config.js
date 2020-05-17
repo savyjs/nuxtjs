@@ -1,6 +1,4 @@
 module.exports = {
-
-
     base: '/',
     head: [
         ['link', {rel: 'icon', href: `/favicon.png`}],
@@ -42,17 +40,10 @@ module.exports = {
             },
             {text: 'ساوی', link: 'https://savy.ir', target: '_blank'},
         ],
-        sidebar: {
-            '/': [
-                '',        /* / */
-                '/guide', /* /intro.html */
-                '/guide/intro', /* /intro.html */
-            ],
-            '/guid': [
-                '',        /* / */
-                '/intro.html', /* /intro.html */
-                '/concepts.html'    /* /concepts.html */
-            ]
-        },
+        sidebar: [
+            '/guide/',
+            '/guide/intro',
+            '/guide/concepts',
+        ],
     }
 }

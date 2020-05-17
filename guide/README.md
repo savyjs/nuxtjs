@@ -1,8 +1,8 @@
 ---
-title: شروع کار با ناکس 
+title: نصب ناکس و ماژول های اولیه
 prev: false
-next: ./concepts
-sidebar: auto
+next: ./concepts 
+sidebarDepth: 4
 ---
 # مطالب
 [[toc]]
