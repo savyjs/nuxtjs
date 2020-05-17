@@ -1,11 +1,13 @@
 module.exports = {
+
+
     base: '/',
     head: [
-        ['link', { rel: 'icon', href: `/favicon.png` }],
-        ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }],
+        ['link', {rel: 'icon', href: `/favicon.png`}],
+        ['link', {rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons`}],
     ],
     docsDir: 'docs',
-    host:'localhost',
+    host: 'localhost',
     port: 8080,
     title: 'ناکس فارسی',
     description: 'طراحی سایت با ناکس لذت بخش تر می شود ',
@@ -39,13 +41,18 @@ module.exports = {
                 ]
             },
             {text: 'ساوی', link: 'https://savy.ir', target: '_blank'},
-        ]
-    },
-    sidebar: {
-        '/guid': [
-            '',        /* / */
-            'intro', /* /intro.html */
-            'concepts'    /* /concepts.html */
-        ]
+        ],
+        sidebar: {
+            '/': [
+                '',        /* / */
+                '/guide', /* /intro.html */
+                '/guide/intro', /* /intro.html */
+            ],
+            '/guid': [
+                '',        /* / */
+                '/intro.html', /* /intro.html */
+                '/concepts.html'    /* /concepts.html */
+            ]
+        },
     }
 }
