@@ -42,7 +42,6 @@ module.exports = {
         ],
         sidebar: [
             '/guide/',
-            '/guide/intro',
             '/guide/concepts',
         ],
     }
