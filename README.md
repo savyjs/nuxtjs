@@ -4,7 +4,7 @@ heroImage: /icon.png
 heroText: ناکس جی اس
 tagline: مستندات فارسی
 actionText: شروع کنید →
-actionLink: /guide/intro/
+actionLink: /guide
 features:
 - title:  سرعت و آسانی
   details: اولویت اول ناکس با آسانی و سرعت می باشد. تقریبا بدون کانفیگ خاصی می توانید بزرگترین پروژه ها را شروع کنید! .
