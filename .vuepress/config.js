@@ -20,7 +20,7 @@ module.exports = {
         repoLabel: 'ریپوی ما!',
         editLinks: true,
         // custom text for edit link. Defaults to "Edit this page"
-        editLinkText: 'اگر این صفحه نیاز به اصلاح دارد لطفا یک پول ریکوئست بدهید',
+        editLinkText: 'برای بهبود متن این صفحه کمک کنید',
         searchPlaceholder: 'جست و جو...',
         nav: [
             {text: 'صفحه نخست', link: '/'},
@@ -42,7 +42,13 @@ module.exports = {
         ],
         sidebar: [
             '/guide/',
-            '/guide/concepts',
+            '/guide/concepts/',
+            '/guide/concepts/structure',
+            '/guide/concepts/layouts',
+            '/guide/concepts/view',
+            '/guide/concepts/routing',
+            '/guide/concepts/components',
+            '/guide/concepts/store',
         ],
     }
 }

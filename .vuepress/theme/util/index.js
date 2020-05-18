@@ -4,14 +4,14 @@ export const endingSlashRE = /\/$/
 export const outboundRE = /^[a-z]+:/i
 
 export function normalize(path) {
-    console.log(0, path);
+    //console.log(0, path);
     return decodeURI(path)
         .replace(hashRE, '')
         .replace(extRE, '')
 }
 
 export function getHash(path) {
-    console.log(1, path);
+    //console.log(1, path);
     const match = path.match(hashRE)
     if (match) {
         return match[0]
@@ -46,24 +46,24 @@ export function ensureExt(path) {
 
 export function isActive(route, path) {
     if (path===undefined){
-        console.log(3.0,route.path)
+        //console.log(3.0,route.path)
         return false;
     }
-    console.log(3.05, path, route.path);
+    //console.log(3.05, path, route.path);
     const routeHash = decodeURIComponent(route.hash)
     const linkHash = getHash(path)
-    console.log(3.1,{linkHash,routeHash})
+    //console.log(3.1,{linkHash,routeHash})
     if (linkHash && routeHash !== linkHash) {
         return false
     }
     const routePath = normalize(route.path)
     const pagePath = normalize(path)
-    console.log(3.2,{routePath, pagePath})
+    //console.log(3.2,{routePath, pagePath})
     return routePath === pagePath
 }
 
 export function resolvePage(pages, rawPath, base) {
-    console.log(4, {pages,base, rawPath});
+    //console.log(4, {pages,base, rawPath});
     if (isExternal(rawPath)) {
         return {
             type: 'external',
@@ -134,7 +134,7 @@ function resolvePath(relative, base, append) {
 export function resolveSidebarItems(page, regularPath, site, localePath) {
     const {pages, themeConfig} = site
 
-    console.log({page, regularPath, site, localePath}, themeConfig.sidebar)
+    //console.log({page, regularPath, site, localePath}, themeConfig.sidebar)
     const localeConfig = localePath && themeConfig.locales
         ? themeConfig.locales[localePath] || themeConfig
         : themeConfig

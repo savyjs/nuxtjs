@@ -1,7 +1,7 @@
 ---
 title: نصب ناکس و ماژول های اولیه
 prev: false
-next: ./concepts 
+next: ./concepts/structure 
 sidebarDepth: 4
 ---
 # مطالب

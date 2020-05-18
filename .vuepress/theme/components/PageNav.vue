@@ -8,7 +8,7 @@
         v-if="prev"
         class="prev"
       >
-        ←
+        →
         <a
           v-if="prev.type === 'external'"
           class="prev"
@@ -51,7 +51,7 @@
         >
           {{ next.title || next.path }}
         </RouterLink>
-        →
+        ←
       </span>
     </p>
   </div>
@@ -159,5 +159,5 @@ function flatten (items, res) {
     padding-top 1rem
     overflow auto // clear float
   .next
-    float right
+    float left
 </style>
