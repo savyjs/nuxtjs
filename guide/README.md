@@ -1,5 +1,5 @@
 ---
-title: نصب ناکس و ماژول های اولیه
+title: شروع
 prev: false
 next: ./concepts/structure 
 sidebarDepth: 4
