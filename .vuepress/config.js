@@ -1,12 +1,12 @@
 module.exports = {
+    host: '0.0.0.0',
+    port: 3000,
     base: '/',
     head: [
         ['link', {rel: 'icon', href: `/favicon.png`}],
         ['link', {rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons`}],
     ],
     docsDir: 'docs',
-    host: 'localhost',
-    port: 8080,
     title: 'ناکس فارسی',
     description: 'طراحی سایت با ناکس لذت بخش تر می شود ',
     themeConfig: {
